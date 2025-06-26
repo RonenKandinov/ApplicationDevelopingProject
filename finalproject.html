@@ -1,0 +1,173 @@
+git checkout -b feature/login-page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+<body>
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>התחברות לפייסבוק</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f2f5;
+    }
+    .login-box {
+      max-width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .facebook-logo {
+      color: #1877f2;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="facebook-logo">Facebook</div>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="דוא"ל או מספר טלפון">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="סיסמה">
+      </div>
+      <button class="btn btn-primary w-100 mb-3">התחבר</button>
+      <div class="text-center">
+        <a href="#">שכחת סיסמה?</a>
+      </div>
+      <hr>
+      <div class="text-center">
+        <button class="btn btn-success">צור חשבון חדש</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+<!-- עמוד הפיד של פייסבוק -->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הפיד שלי - פייסבוק</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f2f5;
+    }
+    .post {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .search-box {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light px-3">
+    <a class="navbar-brand text-primary fw-bold" href="#">Facebook</a>
+    <div class="search-box mx-auto">
+      <input class="form-control" type="search" placeholder="חיפוש בפייסבוק">
+    </div>
+    <div class="ms-auto">
+      <button class="btn btn-outline-secondary">פרופיל</button>
+      <button class="btn btn-outline-secondary">התנתק</button>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="post">
+      <h5>יוסי כהן</h5>
+      <p>איזה יום מדהים בפארק היום!</p>
+    </div>
+    <div class="post">
+      <h5>מיכל לוי</h5>
+      <p>פוסט חדש על הבלוג שלי, תכנסו לקרוא :)</p>
+    </div>
+    <div class="post">
+      <h5>דני רוזן</h5>
+      <p>תמונה מהחופשה האחרונה:</p>
+      <img src="https://via.placeholder.com/400x200" class="img-fluid rounded">
+    </div>
+  </div>
+   <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Facebook</a>
+            <form class="d-flex ms-auto search-box">
+                <input class="form-control" type="search" placeholder="חיפוש" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <ul class="list-unstyled">
+                    <li><a href="#">הפרופיל שלי</a></li>
+                    <li><a href="#">חברים</a></li>
+                    <li><a href="#">קבוצות</a></li>
+                    <li><a href="#">דפים</a></li>
+                    <li><a href="#">שמורים</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 feed">
+                <div class="post mb-4">
+                    <input class="form-control mb-2" placeholder="על מה אתה חושב?">
+                    <button class="btn btn-primary w-100">פרסם</button>
+                </div>
+
+                <div class="post">
+                    <h6>יוסי כהן <small class="text-muted">· לפני שעה</small></h6>
+                    <p>איזה יום יפה היום!</p>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-light btn-sm">לייק</button>
+                        <button class="btn btn-light btn-sm">תגובה</button>
+                        <button class="btn btn-light btn-sm">שיתוף</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <h6>דנה לוי <small class="text-muted">· לפני שעתיים</small></h6>
+                    <p>בדיקה של עמוד הפיד בעיצוב Bootstrap</p>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-light btn-sm">לייק</button>
+                        <button class="btn btn-light btn-sm">תגובה</button>
+                        <button class="btn btn-light btn-sm">שיתוף</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 rightbar">
+                <h6>אנשים שאתה אולי מכיר</h6>
+                <ul class="list-unstyled">
+                    <li>נועה פרידמן</li>
+                    <li>רועי בר</li>
+                    <li>עדי כץ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
